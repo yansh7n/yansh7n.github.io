@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage of Leyan Zheng at Zhejiang University.">
+  <title>Leyan Zheng | Academic Homepage</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5d687b;
+      --line: #e7ebf2;
+      --accent: #2457a6;
+      --paper: #ffffff;
+      --wash: #f5f7fb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 16px/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1060px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .96);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav { display: flex; justify-content: space-between; align-items: center; min-height: 64px; gap: 24px; }
+    .brand { color: var(--ink); font-weight: 700; letter-spacing: .01em; }
+    .links { display: flex; flex-wrap: wrap; gap: 18px; font-size: .95rem; }
+    .links a { color: var(--muted); }
+    .hero { padding: 84px 0 68px; background: linear-gradient(135deg, var(--wash), #fff 62%); }
+    .hero-grid { max-width: 780px; }
+    .eyebrow { color: var(--accent); font-size: .82rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.8rem); line-height: 1.06; margin: 12px 0 18px; letter-spacing: -.045em; }
+    .tagline { color: var(--muted); font-size: 1.15rem; max-width: 650px; }
+    .portrait {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      background: #dce7f8;
+      border: 8px solid #fff;
+      box-shadow: 0 12px 36px rgba(23, 32, 51, .12);
+      font-size: 1rem;
+      text-align: center;
+      padding: 24px;
+    }
+    section { padding: 68px 0; border-bottom: 1px solid var(--line); }
+    section:nth-of-type(even) { background: var(--wash); }
+    h2 { margin: 0 0 22px; font-size: 1.75rem; letter-spacing: -.02em; }
+    h3 { margin: 0 0 5px; font-size: 1.1rem; }
+    .two-col { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; }
+    .muted { color: var(--muted); }
+    .item { padding: 19px 0; border-top: 1px solid var(--line); }
+    .item:first-child { border-top: 0; padding-top: 0; }
+    .meta { color: var(--muted); font-size: .94rem; }
+    .pill { display: inline-block; margin: 4px 6px 0 0; padding: 5px 11px; color: var(--accent); background: #e7effc; border-radius: 999px; font-size: .9rem; }
+    footer { padding: 30px 0 42px; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 720px) {
+      .wrap { width: min(100% - 28px, 620px); }
+      nav { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      .links { gap: 10px 14px; }
+      .hero { padding: 58px 0 50px; }
+      .hero-grid, .two-col { grid-template-columns: 1fr; gap: 32px; }
+      .portrait { order: -1; width: 145px; height: 145px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <nav aria-label="Main navigation">
+        <a class="brand" href="#top">Leyan Zheng</a>
+        <div class="links">
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Academic homepage</div>
+          <h1>Leyan Zheng<br><span style="font-size:.56em; letter-spacing:-.02em;">郑乐言</span></h1>
+          <p class="tagline">I work at Zhejiang University. My research interests include game theory, mechanism design, information design, and human–AI collaboration.</p>
+          <p><a href="mailto:yansh7n@gmail.com">Email</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap two-col">
+        <div>
+          <h2>About</h2>
+          <p>I am affiliated with Zhejiang University. My work studies strategic interaction, the design of rules and institutions, the role of information in decision-making, and collaboration between humans and AI systems.</p>
+          <p class="muted">This page is maintained by Leyan Zheng. Last updated: July 2026.</p>
+        </div>
+        <div>
+          <h2>Research interests</h2>
+          <span class="pill">Game theory</span>
+          <span class="pill">Mechanism design</span>
+          <span class="pill">Information design</span>
+          <span class="pill">Human–AI collaboration</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <h2>Research</h2>
+        <p>My research brings together game theory, mechanism design, and information design to understand how strategic environments can be structured to improve decisions and outcomes. I am also interested in the design of effective and reliable collaboration between humans and AI.</p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="wrap">
+        <h2>Selected publications</h2>
+        <p class="muted">A publication list will be added here.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>Zhejiang University</p>
+        <p><a href="mailto:yansh7n@gmail.com">yansh7n@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Leyan Zheng · Hosted with GitHub Pages</div>
+  </footer>
+</body>
+</html>
